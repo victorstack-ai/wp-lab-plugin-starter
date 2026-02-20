@@ -86,8 +86,6 @@ install_wp() {
 		tar --strip-components=1 -zxmf "$WP_CORE_DIR/wordpress.tar.gz" -C "$WP_CORE_DIR"
 		rm "$WP_CORE_DIR/wordpress.tar.gz"
 	fi
-
-	download https://raw.github.com/markoheijnen/wp-mysqli/master/db.php "$WP_CORE_DIR/wp-content/db.php"
 }
 
 install_test_suite() {
@@ -100,14 +98,20 @@ install_test_suite() {
 
 	# set up testing suite if it doesn't yet exist
 	if [ ! -d "$WP_TESTS_DIR" ]; then
+		# set up testing suite
 		mkdir -p "$WP_TESTS_DIR"
-		git clone --quiet --depth=1 https://github.com/WordPress/wordpress-develop.git /tmp/wordpress-develop
-		if [ -d /tmp/wordpress-develop/tests/phpunit/includes ]; then
-			cp -r /tmp/wordpress-develop/tests/phpunit/includes "$WP_TESTS_DIR/"
+		
+		CLONE_BRANCH=$WP_TESTS_TAG
+		if [[ "$CLONE_BRANCH" == "tags/"* ]]; then
+			CLONE_BRANCH=${CLONE_BRANCH#tags/}
+		elif [[ "$CLONE_BRANCH" == "branches/"* ]]; then
+			CLONE_BRANCH=${CLONE_BRANCH#branches/}
 		fi
-		if [ -d /tmp/wordpress-develop/tests/phpunit/data ]; then
-			cp -r /tmp/wordpress-develop/tests/phpunit/data "$WP_TESTS_DIR/"
-		fi
+
+		git clone --quiet --depth=1 --branch "$CLONE_BRANCH" https://github.com/WordPress/wordpress-develop.git /tmp/wordpress-develop
+		
+		cp -r /tmp/wordpress-develop/tests/phpunit/includes/ "$WP_TESTS_DIR/"
+		cp -r /tmp/wordpress-develop/tests/phpunit/data/ "$WP_TESTS_DIR/"
 	fi
 
 	if [ ! -f wp-tests-config.php ]; then
