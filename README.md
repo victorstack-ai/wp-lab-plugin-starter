@@ -671,3 +671,4 @@ This template is based on the experience gained from developing the
 ["Fix 'Plugin file does not exist' Notices"][fix-plugin-notices] plugin by WPALLSTARS.
 
 [fix-plugin-notices]: https://github.com/wpallstars/wp-fix-plugin-does-not-exist-notices
+# Test comment to trigger CI
