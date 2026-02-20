@@ -4,6 +4,8 @@ parameters:
         - includes
         - admin
         - wp-plugin-starter-template.php
+    bootstrapFiles:
+        - tests/phpstan/bootstrap.php
     excludePaths:
         analyse:
             - vendor

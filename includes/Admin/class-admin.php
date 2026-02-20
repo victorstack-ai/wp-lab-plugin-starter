@@ -43,14 +43,16 @@ class Admin {
      *
      * This method is hooked into 'admin_enqueue_scripts'. It checks if the current
      * screen is relevant to the plugin before enqueueing assets.
+     *
+     * @SuppressWarnings(PHPMD.Superglobals)
      */
     public function enqueue_admin_assets(): void {
 
 		// @phpcs:disable WordPress.Security.NonceVerification.Recommended
 		// @phpcs:disable WordPress.Security.NonceVerification.Missing
-        $page = filter_input( INPUT_GET, 'page', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
+        $page = isset( $_GET['page'] ) ? wp_unslash( $_GET['page'] ) : ''; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 
-        if ( ! $page || 'wp_plugin_starter_template_settings' !== $page ) {
+        if ( 'wp_plugin_starter_template_settings' !== $page ) {
             return;
         }
 		// @phpcs:enable
@@ -61,7 +63,7 @@ class Admin {
         // Enqueue styles.
         \wp_enqueue_style(
             'wpst-admin-styles',
-            plugin_dir_url( dirname( __DIR__ ) ) . 'admin/css/admin-styles.css',
+            WP_PLUGIN_STARTER_TEMPLATE_URL . 'admin/css/admin-styles.css',
             array(), // Dependencies.
             $plugin_version // Version.
         );
@@ -69,7 +71,7 @@ class Admin {
         // Enqueue admin scripts.
         \wp_enqueue_script(
             'wpst-admin-script',
-            plugin_dir_url( dirname( __DIR__ ) ) . 'admin/js/admin-scripts.js',
+            WP_PLUGIN_STARTER_TEMPLATE_URL . 'admin/js/admin-scripts.js',
             array( 'jquery' ),
             $plugin_version, // Version.
             true
