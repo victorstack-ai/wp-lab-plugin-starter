@@ -22,7 +22,7 @@ class CoreTest extends \WP_Mock\Tools\TestCase {
     /**
      * Set up test environment
      */
-    public function setUp() {
+    public function setUp(): void {
         parent::setUp();
 
         // Set up mocks
@@ -35,7 +35,7 @@ class CoreTest extends \WP_Mock\Tools\TestCase {
     /**
      * Tear down test environment
      */
-    public function tearDown() {
+    public function tearDown(): void {
         WP_Mock::tearDown();
         parent::tearDown();
     }
@@ -52,9 +52,29 @@ class CoreTest extends \WP_Mock\Tools\TestCase {
      * Test example method
      */
     public function test_filter_content() {
-        $content = 'Test content';
+        $content = '<div class="notice"><p>Test content</p></div>';
 
         // Test that filter_content returns the content
-        $this->assertEquals($content, $this->core->filter_content($content));
+        $this->assertEqualHTML( $content, $this->core->filter_content( $content ) );
+    }
+
+    /**
+     * Compare HTML using WordPress helper when available, otherwise normalize.
+     *
+     * @param string $expected Expected HTML.
+     * @param string $actual Actual HTML.
+     * @return void
+     */
+    protected function assertEqualHTML( $expected, $actual ) {
+        if ( is_callable( [ get_parent_class( $this ), 'assertEqualHTML' ] ) ) {
+            parent::assertEqualHTML( $expected, $actual );
+            return;
+        }
+
+        $normalize = static function ( $html ) {
+            return preg_replace( '~>\s+<~', '><', trim( (string) $html ) );
+        };
+
+        $this->assertSame( $normalize( $expected ), $normalize( $actual ) );
     }
 }
