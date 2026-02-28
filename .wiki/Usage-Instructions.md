@@ -1,10 +1,10 @@
 # Usage Instructions
 
-This guide provides instructions for using and customizing the WordPress Plugin Starter Template for your own plugin development.
+This guide provides instructions for using and customizing the Plugin Starter Template for your own plugin development.
 
 ## Basic Usage
 
-The WordPress Plugin Starter Template is designed to be a starting point for your WordPress plugin development. It provides a well-structured codebase that you can customize to create your own plugin.
+The Plugin Starter Template is designed to be a starting point for your WordPress plugin development. It provides a well-structured codebase that you can customize to create your own plugin.
 
 ### Template Structure
 

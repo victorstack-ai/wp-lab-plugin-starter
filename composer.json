@@ -1,5 +1,5 @@
 {
-    "name": "wpallstars/wp-plugin-starter-template-for-ai-coding",
+    "name": "wpallstars/plugin-starter-template",
     "description": "A starter template for WordPress plugins with AI development workflows.",
     "type": "wordpress-plugin",
     "version": "0.1.15",

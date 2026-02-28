@@ -27,8 +27,8 @@ set -e
 # Configuration
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
-PLUGIN_SLUG="wp-plugin-starter-template"
-PLUGIN_TEXT_DOMAIN="wp-plugin-starter-template"
+PLUGIN_SLUG="plugin-starter-template"
+PLUGIN_TEXT_DOMAIN="plugin-starter-template"
 
 # LocalWP paths (macOS)
 LOCAL_SITES_DIR="$HOME/Local Sites"

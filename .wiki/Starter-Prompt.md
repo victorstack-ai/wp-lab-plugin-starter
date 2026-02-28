@@ -1,4 +1,4 @@
-# WordPress Plugin Starter Template - AI Assistant Prompt
+# Plugin Starter Template - AI Assistant Prompt
 
 This document provides a comprehensive prompt to help you get started with creating your own WordPress plugin using this starter template with the assistance of AI tools like GitHub Copilot, Claude, or ChatGPT.
 
@@ -187,4 +187,4 @@ Please add the AGENTS.md and .agents/ directory to your AI IDE chat context. In 
 
 ## Credits
 
-This plugin is based on the [WordPress Plugin Starter Template for AI Coding](https://github.com/wpallstars/wp-plugin-starter-template-for-ai-coding) by WPALLSTARS.
+This plugin is based on the [Plugin Starter Template for AI Coding](https://github.com/wpallstars/wp-plugin-starter-template-for-ai-coding) by WPALLSTARS.

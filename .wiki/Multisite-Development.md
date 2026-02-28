@@ -1,6 +1,6 @@
 # Multisite Development
 
-This guide explains how to extend the WordPress Plugin Starter Template for multisite environments.
+This guide explains how to extend the Plugin Starter Template for multisite environments.
 
 ## Overview
 
@@ -170,6 +170,6 @@ For more details on testing, see the [Testing Framework](Testing-Framework.md) d
 
 ## Conclusion
 
-By following this guide, you can extend the WordPress Plugin Starter Template.
+By following this guide, you can extend the Plugin Starter Template.
 
 The included structure provides a solid foundation for multisite features.

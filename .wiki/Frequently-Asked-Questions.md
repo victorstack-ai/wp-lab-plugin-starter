@@ -1,12 +1,12 @@
 # Frequently Asked Questions
 
-This page answers common questions about the WordPress Plugin Starter Template.
+This page answers common questions about the Plugin Starter Template.
 
 ## General Questions
 
-### What is the WordPress Plugin Starter Template?
+### What is the Plugin Starter Template?
 
-The WordPress Plugin Starter Template is a comprehensive starting point for developing WordPress plugins. It provides a well-structured codebase, documentation templates, and best practices to help you create high-quality WordPress plugins efficiently.
+The Plugin Starter Template is a comprehensive starting point for developing WordPress plugins. It provides a well-structured codebase, documentation templates, and best practices to help you create high-quality WordPress plugins efficiently.
 
 ### Who is this template for?
 

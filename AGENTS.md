@@ -16,9 +16,9 @@ Avoid hallucinating functionality from other repositories in the workspace.
 
 ## Project Overview
 
-* **Plugin Name**: WordPress Plugin Starter Template
-* **Plugin Slug**: wp-plugin-starter-template
-* **Text Domain**: wp-plugin-starter-template
+* **Plugin Name**: Plugin Starter Template
+* **Plugin Slug**: plugin-starter-template
+* **Text Domain**: plugin-starter-template
 * **Namespace**: WPALLSTARS\PluginStarterTemplate
 * **Version**: 0.1.15
 * **Requires WordPress**: 5.0+
@@ -27,7 +27,7 @@ Avoid hallucinating functionality from other repositories in the workspace.
 
 ## Repository Structure
 
-* **wp-plugin-starter-template.php**: Main plugin file with plugin headers
+* **plugin-starter-template.php**: Main plugin file with plugin headers
 * **includes/**: Core plugin functionality
   * **plugin.php**: Main plugin class that initializes everything
   * **core.php**: Core functionality class
@@ -127,11 +127,11 @@ All user-facing strings should be translatable:
 * Use `_e()` for echoed strings
 * Use `esc_html__()` for escaped strings
 * Use `esc_html_e()` for escaped and echoed strings
-* Always use the plugin's text domain: `wp-plugin-starter-template`
+* Always use the plugin's text domain: `plugin-starter-template`
 
 Example:
 ```php
-echo esc_html__('This is a translatable string', 'wp-plugin-starter-template');
+echo esc_html__('This is a translatable string', 'plugin-starter-template');
 ```
 
 ## Security Best Practices

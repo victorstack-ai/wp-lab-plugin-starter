@@ -1,6 +1,6 @@
-# WordPress Plugin Starter Template
+# Plugin Starter Template
 
-Welcome to the documentation wiki for the WordPress Plugin Starter Template.
+Welcome to the documentation wiki for the Plugin Starter Template.
 
 This template provides a solid foundation for developing WordPress plugins with best practices for AI-assisted development.
 
@@ -20,7 +20,7 @@ This template provides a solid foundation for developing WordPress plugins with 
 
 ## About This Template
 
-The WordPress Plugin Starter Template is designed to help developers quickly create new WordPress plugins with a solid foundation of best practices. It incorporates modern coding standards, comprehensive documentation, and AI-assisted development workflows.
+The Plugin Starter Template is designed to help developers quickly create new WordPress plugins with a solid foundation of best practices. It incorporates modern coding standards, comprehensive documentation, and AI-assisted development workflows.
 
 This template is based on the experience gained from developing the "Fix 'Plugin file does not exist' Notices" plugin and other successful WordPress plugins.
 

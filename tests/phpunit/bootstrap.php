@@ -24,7 +24,7 @@ if ( getenv( 'WP_PHPUNIT__DIR' ) ) {
      * @return void
      */
     function _manually_load_plugin() {
-        require_once dirname( dirname( __DIR__ ) ) . '/wp-plugin-starter-template.php';
+        require_once dirname( dirname( __DIR__ ) ) . '/plugin-starter-template.php';
         // Load the multisite class for testing.
         $multisite_file = dirname( dirname( __DIR__ ) ) . '/includes/multisite/class-multisite.php';
         if ( file_exists( $multisite_file ) ) {
@@ -40,7 +40,7 @@ if ( getenv( 'WP_PHPUNIT__DIR' ) ) {
 
     // Define constants for testing.
     define( 'WPST_PLUGIN_DIR', dirname( dirname( __DIR__ ) ) . '/' );
-    define( 'WPST_PLUGIN_URL', 'http://example.org/wp-content/plugins/wp-plugin-starter-template/' );
+    define( 'WPST_PLUGIN_URL', 'http://example.org/wp-content/plugins/plugin-starter-template/' );
     define( 'WPST_VERSION', '0.1.0' );
 
     // Include plugin files needed for tests.

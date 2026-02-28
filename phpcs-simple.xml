@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="WordPress Plugin Starter Template Simple">
-    <description>A simplified ruleset for WordPress Plugin Starter Template.</description>
+<ruleset name="Plugin Starter Template Simple">
+    <description>A simplified ruleset for Plugin Starter Template.</description>
 
     <!-- Check all PHP files in directory tree by default. -->
     <file>.</file>

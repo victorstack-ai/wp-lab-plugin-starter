@@ -4,7 +4,7 @@
 # This script deploys the plugin to a local WordPress installation for testing
 
 # Configuration
-PLUGIN_SLUG="wp-plugin-starter-template"
+PLUGIN_SLUG="plugin-starter-template"
 SOURCE_DIR="$(pwd)"
 TARGET_DIR="${WP_LOCAL_PLUGIN_DIR:-/path/to/your/local/wordpress/wp-content/plugins}/$PLUGIN_SLUG"
 

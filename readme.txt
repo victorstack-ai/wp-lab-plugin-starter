@@ -1,4 +1,4 @@
-=== WordPress Plugin Starter Template for AI Coding ===
+=== Plugin Starter Template ===
 Contributors: wpallstars
 Donate link: https://www.wpallstars.com/
 Tags: starter, template, boilerplate, plugin development, ai coding
@@ -13,7 +13,7 @@ A comprehensive starter template for WordPress plugins with best practices for A
 
 == Description ==
 
-The WordPress Plugin Starter Template provides a solid foundation for developing WordPress plugins. It incorporates best practices, modern coding standards, and a comprehensive structure that makes it easy to get started with plugin development.
+The Plugin Starter Template provides a solid foundation for developing WordPress plugins. It incorporates best practices, modern coding standards, and a comprehensive structure that makes it easy to get started with plugin development.
 
 This template is based on the experience gained from developing the "Fix 'Plugin file does not exist' Notices" plugin and other successful WordPress plugins.
 
@@ -212,7 +212,7 @@ You'll need to update all namespace references from WPALLSTARS\PluginStarterTemp
 
 = How do I update the text domain for my plugin? =
 
-You'll need to update all text domain references from 'wp-plugin-starter-template' to your own text domain throughout the codebase.
+You'll need to update all text domain references from 'plugin-starter-template' to your own text domain throughout the codebase.
 
 = Is this template compatible with WordPress multisite? =
 

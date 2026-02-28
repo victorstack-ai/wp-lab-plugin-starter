@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WordPress Plugin Starter Template
+ * Plugin Name: Plugin Starter Template
  * Plugin URI: https://www.wpallstars.com
  * Description: A comprehensive starter template for WordPress plugins with best practices for AI-assisted development.
  * Version: 0.1.15
@@ -8,7 +8,7 @@
  * Author URI: https://www.wpallstars.com
  * License: GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: wp-plugin-starter-template
+ * Text Domain: plugin-starter-template
  * Domain Path: /languages
  * GitHub Plugin URI: wpallstars/wp-plugin-starter-template-for-ai-coding
  * GitHub Branch: main
@@ -28,8 +28,8 @@
  */
 
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
-    die;
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
 }
 
 // Define plugin constants.

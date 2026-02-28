@@ -17,6 +17,6 @@
   },
   "mappings": {
     "wp-content/mu-plugins": "./mu-plugins",
-    "wp-content/plugins/wp-plugin-starter-template-for-ai-coding": "."
+    "wp-content/plugins/plugin-starter-template": "."
   }
 }

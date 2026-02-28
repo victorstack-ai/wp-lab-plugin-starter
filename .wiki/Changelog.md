@@ -1,6 +1,6 @@
 # Changelog
 
-This page documents all notable changes to the WordPress Plugin Starter Template.
+This page documents all notable changes to the Plugin Starter Template.
 
 ## Version 0.1.6 (2025-04-19)
 

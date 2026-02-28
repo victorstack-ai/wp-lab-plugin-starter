@@ -4,11 +4,11 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 
 ## Project Overview
 
-**WordPress Plugin Starter Template** - A comprehensive starter template for WordPress plugins with best practices for AI-assisted development.
+**Plugin Starter Template** - A comprehensive starter template for WordPress plugins with best practices for AI-assisted development.
 
-* **Plugin Slug**: wp-plugin-starter-template
+* **Plugin Slug**: plugin-starter-template
 * **Namespace**: `WPALLSTARS\PluginStarterTemplate`
-* **Text Domain**: wp-plugin-starter-template
+* **Text Domain**: plugin-starter-template
 * **Requirements**: WordPress 5.0+, PHP 7.4+
 * **License**: GPL-2.0+
 
@@ -103,7 +103,7 @@ The build script creates a deployable ZIP file in the repository root.
 
 ### Plugin Initialization Flow
 
-1. **Main Plugin File** (`wp-plugin-starter-template.php`):
+1. **Main Plugin File** (`plugin-starter-template.php`):
    * Defines constants (`WP_PLUGIN_STARTER_TEMPLATE_FILE`, `_PATH`, `_URL`, `_VERSION`)
    * Registers custom autoloader for namespaced classes
    * Instantiates `Plugin` class
@@ -133,7 +133,7 @@ The build script creates a deployable ZIP file in the repository root.
 
 ```
 wp-plugin-starter-template-for-ai-coding/
-├── wp-plugin-starter-template.php  # Main plugin file with headers
+├── plugin-starter-template.php  # Main plugin file with headers
 ├── includes/                        # Core plugin classes
 │   ├── class-plugin.php            # Main plugin orchestration
 │   ├── class-core.php              # Core functionality
@@ -171,7 +171,7 @@ wp-plugin-starter-template-for-ai-coding/
   * Functions: `function_name`
   * Variables: `$variable_name`
 * **Documentation**: DocBlocks required for all classes, methods, and functions
-* **Internationalization**: All user-facing strings must be translatable with text domain `wp-plugin-starter-template`
+* **Internationalization**: All user-facing strings must be translatable with text domain `plugin-starter-template`
 
 ### Markdown Standards
 
@@ -214,11 +214,11 @@ Follow semantic versioning (MAJOR.MINOR.PATCH):
 
 1. Create version branch from main: `git checkout -b v{MAJOR}.{MINOR}.{PATCH}`
 2. Update version in:
-   * `wp-plugin-starter-template.php` (header and constant)
+   * `plugin-starter-template.php` (header and constant)
    * `readme.txt` (Stable tag and changelog)
    * `README.md` (changelog)
    * `CHANGELOG.md`
-   * `languages/wp-plugin-starter-template.pot`
+   * `languages/plugin-starter-template.pot`
 3. Run code quality checks: `npm run quality`
 4. Build plugin: `./build.sh {VERSION}`
 5. Test thoroughly (single-site and multisite)
@@ -299,16 +299,16 @@ All user-facing strings must use translation functions:
 
 ```php
 // Simple strings
-__('Text', 'wp-plugin-starter-template')
+__('Text', 'plugin-starter-template')
 
 // Echoed strings
-_e('Text', 'wp-plugin-starter-template')
+_e('Text', 'plugin-starter-template')
 
 // Escaped strings
-esc_html__('Text', 'wp-plugin-starter-template')
+esc_html__('Text', 'plugin-starter-template')
 
 // Escaped and echoed
-esc_html_e('Text', 'wp-plugin-starter-template')
+esc_html_e('Text', 'plugin-starter-template')
 ```
 
 Translation files are in `languages/` directory.

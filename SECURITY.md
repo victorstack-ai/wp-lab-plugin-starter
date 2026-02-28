@@ -8,13 +8,13 @@
 
 ## Reporting a Vulnerability
 
-The WordPress Plugin Starter Template team takes security issues seriously. We appreciate your efforts to responsibly disclose your findings.
+The Plugin Starter Template team takes security issues seriously. We appreciate your efforts to responsibly disclose your findings.
 
 **Please do NOT report security vulnerabilities through public GitHub issues.**
 
 ### How to Report
 
-1. **Email**: Send a detailed report to [support@wpallstars.com](mailto:support@wpallstars.com) with the subject line "Security Vulnerability Report: wp-plugin-starter-template".
+1. **Email**: Send a detailed report to [support@wpallstars.com](mailto:support@wpallstars.com) with the subject line "Security Vulnerability Report: plugin-starter-template".
 2. **Include**:
    - A description of the vulnerability and its potential impact.
    - Detailed steps to reproduce the issue.

@@ -55,7 +55,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONARCLOUD_GITHUB }}
         with:
           args: >
-            -Dsonar.projectKey=wpallstars_wp-plugin-starter-template-for-ai-coding
+            -Dsonar.projectKey=wpallstars_plugin-starter-template
             -Dsonar.organization=wpallstars
             -Dsonar.sources=.
             -Dsonar.tests=tests

@@ -58,7 +58,7 @@ if [ "$ENV_TYPE" == "single" ]; then
     fi
 
     # Activate our plugin
-    if ! wp-env run cli wp plugin activate wp-plugin-starter-template-for-ai-coding; then
+    if ! wp-env run cli wp plugin activate plugin-starter-template; then
         echo "Failed to activate plugin. Exiting."
         exit 1
     fi
@@ -98,7 +98,7 @@ elif [ "$ENV_TYPE" == "multisite" ]; then
     fi
 
     # Network activate our plugin
-    if ! wp-env run cli wp plugin activate wp-plugin-starter-template-for-ai-coding --network; then
+    if ! wp-env run cli wp plugin activate plugin-starter-template --network; then
         echo "Failed to activate plugin. Exiting."
         exit 1
     fi
@@ -142,7 +142,7 @@ elif [ "$ENV_TYPE" == "playground-single" ]; then
     },
     {
       "step": "activatePlugin",
-      "pluginSlug": "wp-plugin-starter-template-for-ai-coding"
+      "pluginSlug": "plugin-starter-template"
     }
   ]
 }
@@ -244,7 +244,7 @@ elif [ "$ENV_TYPE" == "playground-multisite" ]; then
     },
     {
       "step": "activatePlugin",
-      "pluginSlug": "wp-plugin-starter-template-for-ai-coding",
+      "pluginSlug": "plugin-starter-template",
       "networkWide": true
     },
     {

@@ -131,8 +131,8 @@ This guides you through:
 
 Sites use consistent naming:
 
-* **Single Site**: `wp-plugin-starter-template-single.local`
-* **Multisite**: `wp-plugin-starter-template-multisite.local`
+* **Single Site**: `plugin-starter-template-single.local`
+* **Multisite**: `plugin-starter-template-multisite.local`
 
 ### Syncing Plugin Files
 
@@ -273,8 +273,8 @@ kill $(lsof -t -i :8888)
 ### LocalWP Site Not Found
 
 The script expects sites at:
-* `~/Local Sites/wp-plugin-starter-template-single/`
-* `~/Local Sites/wp-plugin-starter-template-multisite/`
+* `~/Local Sites/plugin-starter-template-single/`
+* `~/Local Sites/plugin-starter-template-multisite/`
 
 Verify the site name matches exactly.
 

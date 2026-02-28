@@ -148,13 +148,13 @@ You can create separate add-on plugins that extend the functionality of the main
 <?php
 /**
  * Plugin Name: My Awesome Add-on
- * Description: Extends the WordPress Plugin Starter Template with awesome features
+ * Description: Extends the Plugin Starter Template with awesome features
  * Version: 1.0.0
  * Author: Your Name
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: my-awesome-addon
- * Requires: WordPress Plugin Starter Template
+ * Requires: Plugin Starter Template
  */
 
 // Check if the main plugin is active
@@ -165,7 +165,7 @@ if (!class_exists('WPALLSTARS\\PluginStarterTemplate\\Plugin')) {
 
 function my_addon_missing_main_plugin_notice() {
     echo '<div class="error"><p>';
-    echo __('My Awesome Add-on requires the WordPress Plugin Starter Template to be installed and activated.', 'my-awesome-addon');
+    echo __('My Awesome Add-on requires the Plugin Starter Template to be installed and activated.', 'my-awesome-addon');
     echo '</p></div>';
 }
 

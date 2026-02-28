@@ -1,6 +1,6 @@
 # Installation Guide
 
-This guide provides instructions for installing and setting up the WordPress Plugin Starter Template.
+This guide provides instructions for installing and setting up the Plugin Starter Template.
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ Before installing the plugin, ensure you have:
 
 1. Log in to your WordPress admin dashboard.
 2. Navigate to **Plugins > Add New**.
-3. Search for "WordPress Plugin Starter Template".
+3. Search for "Plugin Starter Template".
 4. Click **Install Now** next to the plugin.
 5. After installation, click **Activate**.
 

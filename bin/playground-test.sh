@@ -25,7 +25,7 @@ PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 PID_FILE="$PROJECT_DIR/.playground.pid"
 DEFAULT_PORT=8888
 MULTISITE_PORT=8889
-PLUGIN_SLUG="wp-plugin-starter-template"
+PLUGIN_SLUG="plugin-starter-template"
 
 # Colors for output
 RED='\033[0;31m'

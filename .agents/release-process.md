@@ -1,6 +1,6 @@
 # Release Process Guide for AI Assistants
 
-This document outlines the process for preparing and publishing new releases of the WordPress Plugin Starter Template.
+This document outlines the process for preparing and publishing new releases of the Plugin Starter Template.
 
 ## Release Workflow Overview
 
@@ -31,7 +31,7 @@ Example: `git checkout -b v1.0.0`
 
 Update version numbers in all required files:
 
-1. **Main plugin file** (wp-plugin-starter-template.php):
+1. **Main plugin file** (plugin-starter-template.php):
    - Update the `Version:` header
    - Update the version parameter in the Plugin class instantiation
 
@@ -46,7 +46,7 @@ Update version numbers in all required files:
 4. **CHANGELOG.md**:
    - Add a new version section at the top
 
-5. **languages/wp-plugin-starter-template.pot**:
+5. **languages/plugin-starter-template.pot**:
    - Update the `Project-Id-Version` header
 
 ### 3. Run Code Quality Checks
@@ -98,7 +98,7 @@ Test the plugin thoroughly:
 Commit all version changes:
 
 ```bash
-git add wp-plugin-starter-template.php readme.txt README.md CHANGELOG.md languages/wp-plugin-starter-template.pot
+git add plugin-starter-template.php readme.txt README.md CHANGELOG.md languages/plugin-starter-template.pot
 git commit -m "Version {MAJOR}.{MINOR}.{PATCH} - [brief description]"
 ```
 

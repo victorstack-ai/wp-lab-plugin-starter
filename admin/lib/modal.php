@@ -5,6 +5,11 @@
  * @package WPALLSTARS\PluginStarterTemplate\Admin\Lib
  */
 
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 /**
  * File: modal.php
  * Description: Modal related functions for the admin area.

@@ -7,6 +7,11 @@
 
 namespace WPALLSTARS\PluginStarterTemplate;
 
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 use WPALLSTARS\PluginStarterTemplate\Admin\Admin;
 
 /**
@@ -72,7 +77,7 @@ class Plugin {
      */
     public function load_textdomain(): void {
         load_plugin_textdomain(
-            'wp-plugin-starter-template',
+            'plugin-starter-template',
             false,
             dirname( plugin_basename( $this->pluginFile ) ) . '/languages/'
         );

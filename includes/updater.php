@@ -5,3 +5,8 @@
  *
  * @package WPALLSTARS\PluginStarterTemplate
  */
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}

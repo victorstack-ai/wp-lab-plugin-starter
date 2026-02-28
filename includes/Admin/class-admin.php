@@ -7,6 +7,11 @@
 
 namespace WPALLSTARS\PluginStarterTemplate\Admin;
 
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 use WPALLSTARS\PluginStarterTemplate\Core;
 
 /**

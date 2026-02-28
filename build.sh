@@ -11,7 +11,7 @@ if [ -z "$1" ]; then
 fi
 
 VERSION=$1
-PLUGIN_SLUG="wp-plugin-starter-template"
+PLUGIN_SLUG="plugin-starter-template"
 BUILD_DIR="build/$PLUGIN_SLUG"
 ZIP_FILE="$PLUGIN_SLUG-$VERSION.zip"
 

@@ -38,18 +38,18 @@ jobs:
 
       - name: Create build directory
         run: |
-          mkdir -p build/wp-plugin-starter-template-for-ai-coding
-          cp -R *.php README.md LICENSE CHANGELOG.md readme.txt composer.json build/wp-plugin-starter-template-for-ai-coding/
-          cp -R admin includes languages vendor build/wp-plugin-starter-template-for-ai-coding/
-          mkdir -p build/wp-plugin-starter-template-for-ai-coding/assets/banner build/wp-plugin-starter-template-for-ai-coding/assets/icon build/wp-plugin-starter-template-for-ai-coding/assets/screenshots
-          if [ -d "assets/banner" ]; then cp -R assets/banner/* build/wp-plugin-starter-template-for-ai-coding/assets/banner/; fi
-          if [ -d "assets/icon" ]; then cp -R assets/icon/* build/wp-plugin-starter-template-for-ai-coding/assets/icon/; fi
-          if [ -d "assets/screenshots" ]; then cp -R assets/screenshots/* build/wp-plugin-starter-template-for-ai-coding/assets/screenshots/; fi
+          mkdir -p build/plugin-starter-template
+          cp -R *.php README.md LICENSE CHANGELOG.md readme.txt composer.json build/plugin-starter-template/
+          cp -R admin includes languages vendor build/plugin-starter-template/
+          mkdir -p build/plugin-starter-template/assets/banner build/plugin-starter-template/assets/icon build/plugin-starter-template/assets/screenshots
+          if [ -d "assets/banner" ]; then cp -R assets/banner/* build/plugin-starter-template/assets/banner/; fi
+          if [ -d "assets/icon" ]; then cp -R assets/icon/* build/plugin-starter-template/assets/icon/; fi
+          if [ -d "assets/screenshots" ]; then cp -R assets/screenshots/* build/plugin-starter-template/assets/screenshots/; fi
 
       - name: Create ZIP file
         run: |
           cd build
-          zip -r ../wp-plugin-starter-template-for-ai-coding-${{ env.VERSION }}.zip wp-plugin-starter-template-for-ai-coding -x "*.DS_Store" -x "*.git*"
+          zip -r ../plugin-starter-template-${{ env.VERSION }}.zip plugin-starter-template -x "*.DS_Store" -x "*.git*"
           cd ..
 
       - name: Extract changelog
@@ -64,15 +64,15 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          files: wp-plugin-starter-template-for-ai-coding-${{ env.VERSION }}.zip
-          name: v${{ env.VERSION }} - WordPress Plugin Starter Template
+          files: plugin-starter-template-${{ env.VERSION }}.zip
+          name: v${{ env.VERSION }} - Plugin Starter Template
           draft: false
           prerelease: false
           body: |
-            # WordPress Plugin Starter Template v${{ env.VERSION }}
+            # Plugin Starter Template v${{ env.VERSION }}
 
             ${{ env.CHANGELOG }}
 
-            [View full changelog](https://github.com/wpallstars/wp-plugin-starter-template-for-ai-coding/blob/main/CHANGELOG.md)
+            [View full changelog](https://github.com/wpallstars/plugin-starter-template/blob/main/CHANGELOG.md)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

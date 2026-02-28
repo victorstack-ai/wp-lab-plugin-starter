@@ -1,6 +1,6 @@
 # Wiki Documentation Guide for AI Assistants
 
-This document provides guidelines for maintaining and updating the wiki documentation for the WordPress Plugin Starter Template.
+This document provides guidelines for maintaining and updating the wiki documentation for the Plugin Starter Template.
 
 ## Wiki Structure
 

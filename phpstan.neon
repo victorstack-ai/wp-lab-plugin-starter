@@ -3,7 +3,7 @@ parameters:
     paths:
         - includes
         - admin
-        - wp-plugin-starter-template.php
+        - plugin-starter-template.php
     bootstrapFiles:
         - tests/phpstan/bootstrap.php
     excludePaths:

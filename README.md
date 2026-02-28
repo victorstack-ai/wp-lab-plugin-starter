@@ -1,4 +1,4 @@
-# WordPress Plugin Starter Template for AI Coding
+# Plugin Starter Template for AI Coding
 
 [![License][badge-license]][url-license]
 [![Build Status][badge-build]][url-build]
@@ -33,7 +33,7 @@ A comprehensive starter template for WordPress plugins with best practices for A
 
 ## Description
 
-The WordPress Plugin Starter Template provides a solid foundation for developing WordPress plugins.
+The Plugin Starter Template provides a solid foundation for developing WordPress plugins.
 
 It incorporates best practices, modern coding standards, and a comprehensive structure.
 
