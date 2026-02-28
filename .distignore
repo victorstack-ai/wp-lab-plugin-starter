@@ -1,0 +1,58 @@
+# Directories
+.agents/
+.git/
+.github/
+.qoder/
+.wiki/
+.wordpress-org/
+bin/
+build/
+cypress/
+docs/
+mu-plugins/
+node_modules/
+playground/
+reference-plugins/
+scripts/
+tests/
+vendor/
+
+# Dev config files
+.codacy.yml
+.distignore
+.eslintrc.js
+.eslintrc.json
+.gitignore
+.markdownlint.json
+.markdownlintrc
+.phpunit.result.cache
+.stylelintrc.json
+.wp-env.json
+.wp-env.multisite.json
+
+# Project files
+AGENTS.md
+CHANGELOG.md
+PR-DESCRIPTION.md
+README.md
+WARP.md
+investigation.md
+sonar-project.properties
+
+# Build and dependency management
+build.sh
+composer.json
+composer.lock
+cypress.config.js
+package.json
+package-lock.json
+phpcs.xml
+phpcs-simple.xml
+phpmd.xml
+phpstan.neon
+phpunit.xml
+phpunit.xml.dist
+
+# OS files
+.DS_Store
+Thumbs.db

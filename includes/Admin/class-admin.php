@@ -50,7 +50,7 @@ class Admin {
 
 		// @phpcs:disable WordPress.Security.NonceVerification.Recommended
 		// @phpcs:disable WordPress.Security.NonceVerification.Missing
-        $page = isset( $_GET['page'] ) ? wp_unslash( $_GET['page'] ) : ''; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+        $page = isset( $_GET['page'] ) ? sanitize_text_field( wp_unslash( $_GET['page'] ) ) : '';
 
         if ( 'wp_plugin_starter_template_settings' !== $page ) {
             return;

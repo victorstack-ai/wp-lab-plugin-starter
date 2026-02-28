@@ -6,8 +6,8 @@
  * Version: 0.1.15
  * Author: Your Name & The WPALLSTARS Team
  * Author URI: https://www.wpallstars.com
- * License: GPL-2.0+
- * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ * License: GPL-2.0-or-later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: wp-plugin-starter-template
  * Domain Path: /languages
  * GitHub Plugin URI: wpallstars/wp-plugin-starter-template-for-ai-coding
@@ -16,6 +16,7 @@
  * Release Branch: main
  * Release Asset: true
  * Requires at least: 5.0
+ * Tested up to: 6.5
  * Requires PHP: 7.4
  * Update URI: https://github.com/wpallstars/wp-plugin-starter-template-for-ai-coding
  *
